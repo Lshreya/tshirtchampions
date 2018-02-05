@@ -1,0 +1,161 @@
+/*
+ Theme Name:   Twenty Sixteen Child
+ Theme URI:    http://tshirtchampions.com/fxprivate/wp-content/themes/twenty-sixteen-child/
+ Description:  Twenty Sixteen Child Theme
+ Author:       John Doe
+ Author URI:   http://example.com
+ Template:     twentysixteen
+ Version:      1.0.0
+ License:      GNU General Public License v2 or later
+ License URI:  http://www.gnu.org/licenses/gpl-2.0.html
+ Tags:         light, dark, two-columns, right-sidebar, responsive-layout, accessibility-ready
+ Text Domain:  twenty-fifteen-child
+*/
+
+.page-template-full-width-page .content-area
+{
+  float: left;
+  margin-right: -100%;
+  width: 100%;
+  padding: 0 10px;
+}
+
+body.woocommerce-checkout .content-area {
+	/*max-width: 500px; */
+}
+
+#customer_details .col-1,
+.cart-subtotal, 
+.product-subtotal, 
+.product-total, 
+.woocommerce-checkout-review-order-table thead, 
+tr.order-total {
+	display: none;
+}
+
+
+#customer_details .col-2 {
+	width: 100%;
+}
+
+.cart_totals { width: 100%; }
+
+.no-sidebar .entry-content,
+.no-sidebar .entry-header
+{
+  margin-right: 0%;
+  margin-left: 0%;
+}
+
+#masthead {
+	background: url('images/triangles_pattern.png');
+	background-repeat: repeat;
+}
+
+div.site-header-main {
+	margin-top: -40px;
+}
+
+#menu-toggle {
+	background: white;
+}
+
+.price { display: none !important; }
+
+
+#woocommerce_product_search-3 h3 { display: none;}
+
+#woocommerce_product_search-3 {
+	width: 100%;
+	float: right;
+	margin-top: -5px;
+}
+#woocommerce_product_search-3 input {
+	width: 30%;
+	float: right;
+}
+
+#woocommerce-product-search-field {
+	width: 68% !important;
+	float: left !important;
+}
+
+body,
+button,
+input,
+select,
+textarea {
+	
+	font-family: Montserrat, "Helvetica Neue", sans-serif;
+}
+
+
+#products_table_wrap_at td {
+	font-weight: normal;
+}
+#page {
+	max-width: none !important;
+}
+.site-inner {
+	max-width: none !important;
+}
+#content {
+	padding: 5%;
+}
+
+
+/* styles for inventory view */
+
+.product-remove { width: 50px; }
+
+.btn-up_tckt {height: 42px }
+
+
+
+
+@media only screen and (min-width: 480px) {
+	
+	#page {
+		margin: 0;
+	}
+
+	#woocommerce_product_search-3 {
+		width: 400px;
+		float: right;
+		padding-bottom: 0;
+	}
+	#woocommerce_product_search-3 input {
+		width: 30%;
+		float: right;
+	}
+	
+	#woocommerce-product-search-field {
+		width: 68% !important;
+		float: left !important;
+	}
+	
+}
+
+@media only screen and (min-width: 769px)  {
+		#woocommerce_product_search-3 {
+		width: 400px;
+		float: right;
+	}
+	#woocommerce_product_search-3 input {
+		width: 30%;
+		float: right;
+	}
+	
+	#woocommerce-product-search-field {
+		width: 68% !important;
+		float: left !important;
+	}
+}
+
+
+
+
+
+
+
+

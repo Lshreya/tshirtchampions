@@ -1,0 +1,274 @@
+/*
+**************************************************
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	 
+	I Love Memphis - Inksoft Store CSS Alterations
+	for use with the 'Green Beans' theme
+	created 6/21/16
+	by Paul Gardino
+	©2016 Champion Apparel, Awards, Promotions
+	All rights reserved
+	
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+**************************************************
+*/
+
+
+/* alter zoom level because inksoft stretches the 500px size */
+.zoomImg {
+	width: 700px !important;
+	height: 700px !important;
+}
+
+/* remove weird padding */
+body { padding-top: 0px; }
+
+/* if this repeats the logo/header content, make invisible 
+#campaign-details h2 {
+	visibility: hidden;
+}
+
+
+/* Fix for ShareThis button. Can be too low, depending on header. 
+	for this implimentation, made absolute and put below cart button
+	
+	later removed because sharethis is crud. 
+*/
+#ShareThis {
+	
+	margin-top: -3px;
+    display: block;
+    background: #FF4D45;
+    border-radius: 20px;
+    padding: 0 15px 0 0;
+    position: absolute;
+    right: 0;
+    top: 60px;
+}
+
+#btn-share {
+    color: white !important;
+}
+
+/* START header changes */
+
+#header {
+	border-top: 5px solid #336633;
+	height:145px;
+/*	background-image: url('https://tshirtchampions.com/gochampion/external/ws/img/WSicon.jpg') !important; */
+	background-position: bottom center;
+	position: relative !important;
+	background-size: cover !important;
+	border-bottom: 5px solid #336633; 
+	box-shadow:0px 25px #000000;
+	position: relative;
+}
+
+#backToBlog {
+	position: relative;
+	width: 100%;
+	height: 30px;
+	margin:-50px 0 10px 0;
+}
+#backToBlog a {
+	position: relative;
+	width: 100%;
+	padding-top: 10px;
+	height:30px;
+	text-align: center;
+	display: block;
+	background: #FF4D45;
+	color: white;
+	font-weight: bold;
+	font-style: italic;
+}
+
+#storelogoimage { 
+	display: none;
+}
+#PageTitle {
+	background-image: url('https://tshirtchampions.com/gochampion/external/ws/img/WSicon.jpg') !important;
+	background-size: contain;
+	background-position: center center;
+	background-repeat: no-repeat;
+	height: 92px; 
+	display:block !important;
+	top: 0;
+	left: 50%;
+	position: relative;
+	margin-left: -108px;
+}
+
+#PageTitle a {
+	font-size: 0 !important;
+	display: block;
+	min-width: 216px; 
+	height: 150px;
+}
+
+/* START Product listing changes */
+
+.ms-mp-product-details {
+	display: block !important;
+	position: static;
+	height: auto;
+	background: none;
+	box-shadow: none;
+	border:none;
+}
+.ms-mp-product-details-header {
+	display: none;
+}
+.ms-mp-details-content {
+	height: auto;
+	padding: 5px 0 0 0;
+	min-height: 150px;
+	position: absolute;
+	bottom: 0;
+}
+
+.ms-mp-title a.font-montserrat {
+	display: none;
+}
+
+.ms-mp-product-details:after {
+	background-color:none;
+	display: none;
+}
+
+.ms-mp-title {
+	border-top: none !important;
+	min-height: 51px;
+}
+
+.ms-mp-title span {
+	font-weight: bold;
+	font-size: 1.3em;
+	border-bottom:	1px solid #d2d2d3 !important;
+	width:100%;
+}
+
+.ms-mp-options:first-child {
+	height: auto;
+}
+
+.ms-mp-product {
+	min-height: 750px;
+	padding: 0;
+}
+
+.ms-mp-button {
+	margin: 0;
+	bottom: 160px;
+	font-size: 1em;
+}
+
+.ms-mp-option-color {display: block !important;}
+
+.ms-mp-product-details-footer {display: none;}
+
+.ms-mp-swatch-container {
+	display: block !important;
+}
+
+
+/* START 'powered by' block and footer changes */
+
+#poweredBy {
+	height: 80px;
+	margin-top:-110px;
+	margin-bottom: 20px;
+	text-align: right;
+}
+
+#poweredLink {
+	display: inline-block;
+	width: 360px;
+	height: 80px;
+	background: url('https://tshirtchampions.com/gochampion/external/ws/img/Champion-footer-logo.png');
+}
+
+
+
+/* keep it to one extra query if possible. This one is necessary because of the inksoft theme's own reponses */
+
+@media screen and (max-width: 600px) {
+	
+	#ShareThis {
+		display: none;
+	}
+	
+	#header {
+		height:122px !important;
+	}
+	#PageTitle {
+		height: 97px !important;
+		width: 140px !important; 
+		min-width: 140px;
+		margin-left: -70px !important;
+		/* background-size: cover !important; */
+		margin-top: 0px;
+	}
+	#PageTitle a {
+		height: 97px !important;
+		width: 140px !important; 
+		min-width: 140px;
+	}
+	
+	#poweredLink {
+		margin-top:10px;
+	}
+	
+	#ShareThis {
+	    left: 50%;
+	    top: 109px;
+	    width: 110px;
+	    margin-top: 0px;
+	    margin-left: -55px;
+	}
+	
+}
+@media only screen and (min-width: 601px) {
+	
+	#ShareThis {
+		display: none;
+	}
+	
+	#campaign-title-container {
+    	width: 100%;
+		height: 1px;
+	}
+	#backToBlog {
+		max-width: 960px;
+		margin: -75px auto -45px;
+	}
+	#backToBlog a {
+		width: 150px;
+		padding-top: 10px;
+		height:35px;
+		text-align: center;
+		display: block;
+		background: #FF4D45;
+		color: white;
+		font-weight: bold;
+		font-style: italic;
+		margin-top:40px;
+		margin-left:30px;
+		border-radius: 20px;
+	}
+		
+	#headerLinkWrap{
+		margin:17px 30px 0 0;
+		width: 150px;
+		float: right;
+	}
+}
+
+@media only screen and (min-width: 601px) and (max-width: 919px) {
+
+	
+	#AccountSignIn, #mc1 { float: right; display: block;  }
+	
+}
+
+

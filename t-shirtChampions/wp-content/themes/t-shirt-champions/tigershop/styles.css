@@ -1,0 +1,19 @@
+
+
+#btn-quote, .icon-locked {display:none !important;}
+
+
+
+.btn-primary {
+	background: -webkit-linear-gradient(#b3b2b2 0%, #9ab3ff 100%)
+}
+
+
+
+#wp_utility a:hover {
+	color: #a7a0ff;
+}
+
+#starter-container-add-to-cart {
+	width: 100% !important;
+}

@@ -1,0 +1,34 @@
+/************* Sticky Header *************/
+
+.sticky-wrapper {}
+#header.stuck {}
+@media only screen and (min-width: @breakPointUpper) {
+	.site-stretch .sticky-wrapper #header { width: 100%; }
+	#header.stuck {
+		position: fixed;
+		top: 0;
+		z-index: 9999;
+		#site-logo { margin: 5px 0; }
+		#site-logo.with-background { padding: 5px; }
+		#site-logo-text { margin:0; }
+		#site-logo #site-title { font-size: 35px; }
+		.site-logo-with-icon #site-title { margin-left: 32px; }
+		.site-logo-with-icon #site-title i { font-size: 32px; }
+		#site-description { display: none; font-size: 13px; }
+		.site-logo-with-image .site-logo-mixed-image { padding-right: 5px; }
+		#site-logo-text, #site-logo-custom, #site-title, #site-description,
+		#site-title a, #site-title i {
+			.transition( margin 0.2s linear, font-size 0.2s linear, line-height 0.2s linear, padding 0.2s linear; );
+		}
+		.branding img {
+			max-height: 75px;
+			width: auto;
+			.transition( max-height 0.2s linear; );
+		}
+		.menu-items { line-height: 1.666em; }
+		&.tablemenu #menu-primary-items > li { display: inline-block; float: left; }
+		.menu-items > li > a { padding-top: 5px; padding-bottom: 5px; }
+		.menu-description { display: none; }
+		.sub-menu .menu-description { display: block; }
+	}
+}

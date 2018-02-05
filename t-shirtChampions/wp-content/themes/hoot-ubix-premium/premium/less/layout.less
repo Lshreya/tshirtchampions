@@ -1,0 +1,69 @@
+/**
+ * Layout
+ * ========================================================
+ */
+
+
+body { background: @bodyBackground; }
+@media screen and (max-width: 600px) {
+	body.logged-in.admin-bar { position: static; }
+}
+
+#page-wrapper {
+	// background: @bodyBackground; // should be transparent for stretched layout
+	width: 100%;
+	display: block;
+	margin: 0 auto;
+}
+#topbar, #below-header, #sub-footer, #footer { overflow: hidden; }
+
+
+/* Sidebar and Content Layout */
+
+.content.no-sidebar {
+	float: none;
+	margin-left: auto;
+	margin-right: auto;
+}
+.content.layout-wide-left,
+.content.layout-narrow-left { float: right; }
+.sidebar.layout-wide-left,
+.sidebar.layout-narrow-left {}
+
+@media only screen and (min-width: @breakPointUpper) {
+	/*
+	 * We only apply flex model to 3 column layout to prevent:
+	 * Frontpage=> full width layout leads to <div class="grid-stretch main-content-grid">
+	 * HTML slider inside grid-stretch becomes way tooo wide and distorts layout
+	 * slider needs to be in 'grid' (max-width set to pixel value 1260) if container is flex model
+	 * So we apply flex model only to layouts where we know for a fact that grid-stretch wont be used.
+	*/
+	.sitewrap-narrow-left-right  .main-content-grid,
+	.sitewrap-narrow-left-left   .main-content-grid,
+	.sitewrap-narrow-right-right .main-content-grid {
+		.flexbox();
+	}
+	// .sitewrap-wide-left .sidebar,
+	// .sitewrap-narrow-left .sidebar {
+	// 	.flex-order(1);
+	// }
+	// .sitewrap-wide-left .content,
+	// .sitewrap-narrow-left .content {
+	// 	.flex-order(2);
+	// }
+	.sitewrap-narrow-left-right  .sidebar-primary,
+	.sitewrap-narrow-left-left   .sidebar-primary,
+	.sitewrap-narrow-right-right .content {
+		.flex-order(1);
+	}
+	.sitewrap-narrow-left-right  .content,
+	.sitewrap-narrow-left-left   .sidebar-secondary,
+	.sitewrap-narrow-right-right .sidebar-primary {
+		.flex-order(2);
+	}
+	.sitewrap-narrow-left-right  .sidebar-secondary,
+	.sitewrap-narrow-left-left   .content,
+	.sitewrap-narrow-right-right .sidebar-secondary {
+		.flex-order(3);
+	}
+}

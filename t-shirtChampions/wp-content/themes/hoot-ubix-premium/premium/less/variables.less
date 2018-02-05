@@ -1,0 +1,94 @@
+//
+// Variables
+// --------------------------------------------------
+
+
+// Grays - For brevity, do not use these outside this file
+// --------------------------------------------------
+@black:					#000;
+@grayDarkest:			#222;
+@grayDarker:			#444;
+@grayDark:				#666;
+@grayBase:				#777;
+@gray:					#888;
+@grayLight:				#aaa;
+@grayLighter:			#ddd;
+@grayLightest:			#eee;
+@whiteHighlight:		#f5f5f5;
+@white:					#fff;
+
+
+// GRID
+// --------------------------------------------------
+@gridMaxWidth:				1260px;
+@gridMinWidth:				320px;
+@gridSpans:					12;
+@gridSpanWidth:				percentage(1/@gridSpans);
+@gridSpanGutter:			30px;
+@gridSpanSmallGutter:		20px;
+@gridSpanResponsiveGutter:	15px;
+
+
+// Typography
+// --------------------------------------------------
+@sansFontFamily:	"Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+@serifFontFamily:	Georgia, "Times New Roman", Times, serif;
+@monoFontFamily:	Monaco, Menlo, Consolas, "Courier New", monospace;
+@displayFontFamily:	"Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+@logoFontFamily:	"Graduate", "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+@baseFontFamily:	@sansFontFamily;
+@baseFontColor:		@grayDark; // #666
+@lightFontColor:	@gray; // #888
+@baseFontSize:		15px;
+@baseFontSizeSmall:	unit( ( @baseFontSize - 3 ) / @baseFontSize, em); // {12px} Minus 3px to fontsize & return in em
+@baseFontSizeMedium:unit( ( @baseFontSize - 2 ) / @baseFontSize, em); // {13px} Minus 2px to fontsize & return in em
+@baseFontSizeBig:	unit( ( @baseFontSize + 3 ) / @baseFontSize, em); // {18px} Add 3px to fontsize & return in em
+@baseLineHeight:	unit( ( @baseFontSize + 10 ) / @baseFontSize, em); // {25px} Add 10px to fontsize & return in em
+@altFontFamily:		@serifFontFamily;
+
+@headingsFontFamily:@displayFontFamily;
+@headingsColor:		@grayDarkest;
+@headingsLineHeight:1.33333333em;
+@headingsFontWeight:normal;
+@headingsMargins:	25px 0 15px;
+@h1FontSize:		unit( ( @baseFontSize + 15 ) / @baseFontSize, em); // {30px} Add 15px to fontsize & return in em
+@h2FontSize:		unit( ( @baseFontSize + 11 ) / @baseFontSize, em); // {26px} Add 11px to fontsize & return in em
+@h3FontSize:		unit( ( @baseFontSize + 7 ) / @baseFontSize, em); // {22px} Add 7px to fontsize & return in em
+@h4FontSize:		unit( ( @baseFontSize + 5 ) / @baseFontSize, em); // {20px} Add 5px to fontsize & return in em
+@h5FontSize:		unit( ( @baseFontSize + 3 ) / @baseFontSize, em); // {18px} Add 3px to fontsize & return in em
+@h6FontSize:		unit( ( @baseFontSize + 1 ) / @baseFontSize, em); // {16px} Add 3px to fontsize & return in em
+
+
+// Backgrounds and Colors
+// --------------------------------------------------
+@bodyBackground:		@white;
+@accentColor:			#db1010;
+@accentFontColor:		#ffffff;
+@bgHighlightColor:		@whiteHighlight; // #f5f5f5 Used for highlighting backgrounds
+@bgHighlightToneColor:	@grayLighter; // #ddd Used for borders, font backgrounds etc.
+@bgHighlightToneDark:	@grayLight; // #aaa Used for borders, font backgrounds etc.
+
+
+// Margins
+// --------------------------------------------------
+@smallVerticalMargin:	unit( ( @baseFontSize - 5 ) / @baseFontSize, em); //{10px} Minus 5px to fontsize & return in em
+@verticalMargin:		unit( ( @baseFontSize + 0 ) / @baseFontSize, em); //{15px} Add 0px to fontsize & return in em
+@bigVerticalMargin:		unit( ( @baseFontSize + 10 ) / @baseFontSize, em); //{25px} Add 10px to fontsize & return in em
+@hugeVerticalMargin:	unit( ( @baseFontSize + 25 ) / @baseFontSize, em); //{40px} Add 25px to fontsize & return in em
+@widgetMargin:			65px;
+@sidebarWidgetMargin:	50px;
+
+
+// Forms
+// --------------------------------------------------
+@formHighlightColor:	@grayLighter; // #ddd
+@formFontColor:			@grayDark; // #666
+@formFieldColor:		@white;
+
+
+// RESPONSIVE
+// --------------------------------------------------
+@breakPoint:			799px; // Using 799/800 instead of 767/768 to show responsive on tablet portraits as well. 800 is the next good break point (portrait width for some tabs like Samsung Galaxy and Nexus)
+@breakPointUpper:		800px; // Cannot use @breakPoint + 1 as that wont render inside a media query
+@higherBreakPoint:		1023px;

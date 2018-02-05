@@ -1,0 +1,84 @@
+/**
+ * Hoot Grid
+ * grid sets the width, row clears the floats for containing spans
+ * spans are the building blocks for content structure
+ * ========================================================
+ */
+
+
+.grid {
+	width: 100%;
+	min-width: @gridMinWidth;
+	max-width: @gridMaxWidth;
+	.center-block();
+}
+.grid-stretch {
+	width: 100%;
+	min-width: @gridMinWidth;
+}
+.grid, .grid-stretch { .clearfix(); }
+
+[class *= "grid-span-"], [class *= "column-"] {
+	padding: 0 @gridSpanGutter;
+	.box-sizing(border-box);
+	float: left;
+	position: relative;
+}
+[class *= "grid-span-"].full-width,
+[class *= "column-"].full-width { padding: 0; }
+
+.flush-columns { margin: 0 -@gridSpanSmallGutter; }
+[class *= "column-"] { padding: 0 @gridSpanSmallGutter; }
+
+
+/************* Span Widths*************/
+
+.grid-span-1  { .gridSpanWidth(1);  }
+.grid-span-2  { .gridSpanWidth(2);  }
+.grid-span-3  { .gridSpanWidth(3);  }
+.grid-span-4  { .gridSpanWidth(4);  }
+.grid-span-5  { .gridSpanWidth(5);  }
+.grid-span-6  { .gridSpanWidth(6);  }
+.grid-span-7  { .gridSpanWidth(7);  }
+.grid-span-8  { .gridSpanWidth(8);  }
+.grid-span-9  { .gridSpanWidth(9);  }
+.grid-span-10 { .gridSpanWidth(10); }
+.grid-span-11 { .gridSpanWidth(11); }
+.grid-span-12 { .gridSpanWidth(12); }
+
+
+/************* Column Widths *************/
+
+.column-1-1, .column-2-2, .column-3-3, .column-4-4, .column-5-5 { .gridSpanWidth(12); }
+.column-1-2 { .gridSpanWidth(6); }
+.column-1-3 { .gridSpanWidth(4); }
+.column-2-3 { .gridSpanWidth(8); }
+.column-1-4 { .gridSpanWidth(3); }
+.column-2-4 { .gridSpanWidth(6); }
+.column-3-4 { .gridSpanWidth(9); }
+.column-1-5 { width: 20%; }
+.column-2-5 { width: 40%; }
+.column-3-5 { width: 60%; }
+.column-4-5 { width: 80%; }
+
+
+/************* Responsive Grid *************/
+
+@media only screen {
+	@media (max-width: @higherBreakPoint) {
+		[class *= "grid-span-"],
+		[class *= "column-"] { padding: 0 @gridSpanResponsiveGutter; }
+		.flush-columns { margin: 0; } // margin: 0 -@gridSpanResponsiveGutter;
+		/* In adaptive grid, smaller spans and units will adapt to less screen space */
+		// @todo: Fix floats with nth-child
+		.adaptive .column-1-5 { width: 40%; }
+		.adaptive .column-1-4 { .gridSpanWidth(6); }
+		.adaptive .grid-span-1 { .gridSpanWidth(2); }
+		.adaptive .grid-span-2 { .gridSpanWidth(4); }
+		.adaptive .grid-span-6 { .gridSpanWidth(6); }
+	}
+	@media (max-width: @breakPoint) {
+		[class *= "grid-span-"], .adaptive [class *= "grid-span-"],
+		[class *= "column-"], .adaptive [class *= "column-"] { width: 100%; }
+	}
+}

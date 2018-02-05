@@ -1,0 +1,76 @@
+Redirect 301 /military-t-shirts/ http://www.tshirtchampions.com/product-category/military-t-shirts/
+Redirect 301 /religious-t-shirts/ http://www.tshirtchampions.com/product-category/religious-t-shirts/
+Redirect 301 /parties-and-events-t-shrits/ http://www.tshirtchampions.com/product-category/parties-and-events-t-shrits/
+Redirect 301 /custom-holiday-t-shirts-online/ http://www.tshirtchampions.com/product-category/custom-holiday-t-shirts-online/
+Redirect 301 /cheap-t-shirts/ http://www.tshirtchampions.com/design-library/
+Redirect 301 /sports-custom-t-shirts/ http://www.tshirtchampions.com/product-category/sports-custom-t-shirts/
+Redirect 301 /custom-business-t-shirts/ http://www.tshirtchampions.com/product-category/custom-business-t-shirts/
+Redirect 301 /first-responders-t-shirts/ http://www.tshirtchampions.com/product-category/first-responders-t-shirts/
+Redirect 301 /custom-school-t-shirts/ http://www.tshirtchampions.com/product-category/custom-school-t-shirts/
+Redirect 301 /custom-charity-fundraiser-t-shirts/ http://www.tshirtchampions.com/product-category/custom-charity-fundraiser-t-shirts/
+
+Redirect 301 /blog/whats-next/ http://www.tshirtchampions.com/blog/
+Redirect 301 /blog/archive/2015/ http://www.tshirtchampions.com/2015/
+Redirect 301 /blog/archive/2014/ http://www.tshirtchampions.com/2014/
+Redirect 301 /blog/archive/2015/8/ http://www.tshirtchampions.com/2015/8/
+Redirect 301 /blog/topics/cancer/ http://www.tshirtchampions.com/blog/
+Redirect 301 /blog/topics/bike/ http://www.tshirtchampions.com/blog/
+Redirect 301 /blog/?page_num=2 http://www.tshirtchampions.com/blog/
+Redirect 301 /blog/topics/choose901/ http://www.tshirtchampions.com/blog/
+Redirect 301 /blog/topics/good-cause/ http://www.tshirtchampions.com/blog/
+Redirect 301 /blog/topics/west-cancer-center/ http://www.tshirtchampions.com/blog/
+Redirect 301 /blog/topics/ride-to-fight-on/ http://www.tshirtchampions.com/blog/
+Redirect 301 /blog/topics/business-advice-from-a-grown-up-kid/ http://www.tshirtchampions.com/blog/
+Redirect 301 /blog/?page_num=2 http://www.tshirtchampions.com/blog/
+Redirect 301 /blog/2000-donated-to-mscle-foundation-/ http://www.tshirtchampions.com/blog/
+Redirect 301 /blog/topics/memphisshelby-county-law-enforcement-foundation/ http://www.tshirtchampions.com/blog/
+Redirect 301 /blog/the-2014-choose901-t-shirts-are-in/ http://www.tshirtchampions.com/blog/
+Redirect 301 /blog/peace-and-forgiveness-are-the-only-answers/ http://www.tshirtchampions.com/blog/
+Redirect 301 /blog/guest-post-t-shirt-champions-ceo-mike-bowen-on-advice-from-a-grown-up-kid-were-all-still-kids/ http://www.tshirtchampions.com/blog/
+Redirect 301 /blog/this-leader-bleeds-blue/ http://www.tshirtchampions.com/blog/
+
+Redirect 301 /start-designing/fleece/ http://www.tshirtchampions.com/start-designing/
+Redirect 301 /start-designing/outerwear/  http://www.tshirtchampions.com/start-designing/
+Redirect 301 /start-designing/t-shirts/short-sleeve/ http://www.tshirtchampions.com/start-designing/
+Redirect 301 /start-designing/t-shirts/long-sleeves/ http://www.tshirtchampions.com/start-designing/
+
+Redirect 301 /our-company/testimonials/?page_num=2 http://www.tshirtchampions.com/our-company/testimonials/
+Redirect 301 /our-company/testimonials/?page_num=3 http://www.tshirtchampions.com/our-company/testimonials/
+Redirect 301 /our-company/testimonials/?page_num=6 http://www.tshirtchampions.com/our-company/testimonials/
+Redirect 301 /our-company/tsc-in-the-media/ http://www.tshirtchampions.com/our-company/tsc-in-the-news/
+Redirect 301 /our-company/submit-testimonial/ http://www.tshirtchampions.com/our-company/submit-a-testimonal/
+Redirect 301 /our-company/champion-of-the-month/become-a-champion/ http://www.tshirtchampions.com/helpful-resources/become-a-champion/
+Redirect 301 /our-company/t-shirts-giving-back/community-partners/ http://www.tshirtchampions.com/our-company/t-shirts-giving-back/our-community-partners/
+
+Redirect 301 /helpful-resources/three-ways-to-begin/ http://www.tshirtchampions.com/helpful-resources/3-easy-ways-to-begin/
+Redirect 301 /helpful-resources/shipping-delivery-and-returns/ http://www.tshirtchampions.com/helpful-resources/shipping-delivery-returns/
+Redirect 301 /helpful-resources/designing-online/tips-and-tricks/ http://www.tshirtchampions.com/helpful-resources/designing-online/
+Redirect 301 /helpful-resources/tutorials/how-to-add-art/ http://www.tshirtchampions.com/helpful-resources/designing-online/adding-art/
+Redirect 301 /helpful-resources/tutorials/designing-on-multiple-garments/ http://www.tshirtchampions.com/helpful-resources/
+Redirect 301 /helpful-resources/whats-good-art/print-size-and-placement/ http://www.tshirtchampions.com/helpful-resources/printing-placement-alignment/
+Redirect 301 /helpful-resources/printing-placement-and-alignment/ http://www.tshirtchampions.com/helpful-resources/printing-placement-alignment/
+Redirect 301 /helpful-resources/designing-online/fonts-and-text/ http://www.tshirtchampions.com/helpful-resources/designing-online/fonts-text/
+Redirect 301 /helpful-resources/tutorials/how-to-add-text-effects/ http://www.tshirtchampions.com/helpful-resources/designing-online/special-effects/
+
+<FilesMatch ".(eot|ttf|otf|woff)">
+	Header set Access-Control-Allow-Origin "*"
+</FilesMatch>
+
+# BEGIN WordPress
+
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteBase localhost/t-shirtChampions/
+RewriteRule ^index\.php$ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . localhost/t-shirtChampions/index.php [L]
+</IfModule>
+
+# END WordPress
+#  BEGIN Increases Max Upload Size
+php_value upload_max_filesize 1000M
+php_value post_max_size 2000M
+php_value max_execution_time 30000M
+php_value max_input_time 300
+#  END Increases Max Upload Size

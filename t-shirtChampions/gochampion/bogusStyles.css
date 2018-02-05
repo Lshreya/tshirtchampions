@@ -1,0 +1,14 @@
+header#header {
+background-image: url('http://stores.inksoft.com/images/publishers/6632/stores/Champion_Awards/img/masterwatermark.png');
+background-repeat: no-repeat;
+background-position: 50% 65px;
+}
+
+.header-nav {
+margin-top: 50px;
+}
+
+div#footer-callout img.footer-callout-img,
+#breadcrumbs ul {
+display:none;
+}

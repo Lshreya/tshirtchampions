@@ -1,0 +1,274 @@
+/*
+Theme Name: Hoot Ubix Premium Child
+Template: hoot-ubix-premium
+Author: wpHoot
+Version: 1.0
+*/
+
+h3.widget-title {
+    font-size: 3em;
+    text-align: center;
+}
+
+h3.cta-headline {
+    font-size: 1.333em;
+    color: #002a5c;
+    font-weight: bold;
+}
+
+/* Footer button link color */
+#footer h3.cta-headline {
+    color: #002a5c;
+}
+
+#footer {
+    background-color: #ececec;
+}
+#footer .widget_hoot-cta-widget a {
+    color: white;
+}
+
+#sub-footer {
+    background: WHITE;
+}
+
+.header-primary-menu #branding {
+    width: 30%;
+}
+
+.content {
+    padding-top: 30px;
+}
+
+.item {
+    break-after: column
+}
+
+.loop-title {
+    font-size: 45px;
+}
+
+.content {
+    padding-top: 20px;
+    margin-top: 30px;
+}
+
+.sub_categories {
+    line-height: 1em;
+    padding: 10px 0 0 0;
+}
+
+.sub_categories p {
+    margin: .5em 0;
+}
+
+#frontpage-area_b img {
+    max-height: 350px;
+}
+
+h4.content-block-title {
+    font-size: 25px;
+}
+
+.vc_icon_element.vc_icon_element-outer.vc_icon_element-align-center {
+    font-size: 10px;
+}
+
+#primary .entry-content {
+    width: 100% !important;
+}
+
+#content .loop-title {
+    font-size: 40px;
+    text-transform: uppercase;
+}
+
+.frontpage-area.area-highlight {
+    background: white;
+}
+
+.lightSlider .style-light-on-dark {
+    color: #fff;
+    background: #333;
+    /*background: rgba(0,0,0,.45);*/
+}
+
+.content.no-sidebar {
+    width: 100%;
+}
+
+
+/* Media Querie to align the product pages in four columns for Desktops*/
+
+@media only screen and (min-width: 768px) {
+    #products .row {
+        -moz-column-count: 4;
+        -moz-column-gap: 20px;
+        -webkit-column-count: 4;
+        -webkit-column-gap: 20px;
+        column-count: 4;
+        column-gap: 20px;
+    }
+    .header-primary-menu #branding {
+        width: 50%;
+    }
+}
+/* Width of the main header for Tablets */
+@media only screen and (min-width: 600px){
+    .header-primary-menu #header-aside{
+        width: 90%;
+    }
+}
+
+/* Mobile Phone or Small Devices Styling */
+
+@media only screen and (max-width: 768px) {
+    #Champy {
+        display: none;
+    }
+    #frontpage-area_a_1 .content-block-style1 {
+        Position: inherit;
+    }
+    /*footer */
+    #footer .widget {
+        margin: 0 0;
+    }
+}
+
+
+/*Display Testimonial on Homepage*/
+
+.post-type-archive-testimonials h1 {
+    color: #21486f;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 700;
+    margin-top: 35px;
+    margin-bottom: 35px;
+}
+
+.post-type-archive-testimonials .testimonial-wrap {
+    clear: both;
+    min-height: 120px;
+    background: #F7F7F7;
+    margin-bottom: 25px;
+    padding: 25px 35px 30px 70px;
+    margin-left: 60px;
+    border-radius: 6px;
+    border: 1px solid #E7E7E7;
+}
+
+.post-type-archive-testimonials .client-photo {
+    float: left;
+    width: 100px;
+    height: 100px;
+    border: 6px solid #fff;
+    border-radius: 50%;
+    box-shadow: 1px 1px 5px #A8A7A7;
+    position: absolute;
+    left: 23px;
+}
+
+.post-type-archive-testimonials h2.post-title,
+.post-type-archive-testimonials .client_name {
+    color: #579241;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 900;
+    margin-top: 0;
+}
+
+.post-type-archive-testimonials .company {
+    font-family: verdana;
+    font-size: 11px;
+    color: #000;
+}
+
+.post-type-archive-testimonials .post-excerpt {
+    margin-bottom: 0;
+}
+
+.post-type-archive-testimonials .testimonial-wrap .post-excerpt p {
+    color: #838383;
+}
+
+.testimonial-home h6 {
+    background: #003658;
+    border-radius: 6px 6px 0 0;
+    padding: 12px 0 12px 20px;
+    margin: 0 0 0 20px;
+    text-shadow: 1px 1px 0 #000;
+    color: #C4D8BC;
+}
+
+.testimonial-home h6 a {
+    color: #C4D8BC;
+}
+
+.testimonial-home-inner {
+    background: #F0F3F5;
+    padding: 35px 60px 42px 94px;
+    border-radius: 0 0 6px 6px;
+    margin-left: 0;
+    position: relative;
+    text-align: center;
+}
+
+.testimonial-home-inner img {
+    /*position:absolute;*/
+    left: -30px;
+    top: 25px;
+}
+
+.testimonial-home-inner p {
+    font-size: 16px;
+    line-height: 24px;
+    font-style: italic;
+}
+
+.testimonial-home-inner .client-photo {
+    float: left;
+    width: 100px;
+    height: 100px;
+    border: 6px solid #fff;
+    border-radius: 50%;
+    box-shadow: 1px 1px 5px #A8A7A7;
+}
+
+.testimonial-home-inner p.company {
+    color: #000 !important;
+    font-family: verdana;
+    font-size: 11px;
+    font-style: normal;
+    line-height: 16px;
+}
+
+
+/*sidebar Styling*/
+
+.sidebar .current_page_item>a {
+    color: #f15c22;
+    background: url(/wp-content/themes/hoot-ubix-premium/images/full.png) no-repeat left top;
+}
+
+.sidebar .menu-title {
+    padding-left: 25px;
+    color: #002a5c;
+}
+
+.sidebar .menu-title:hover {
+    color: #f15c22
+}
+
+.main ul {
+    list-style: none;
+}
+
+.main ul ul {
+    list-style: none;
+}
+
+
+/* testimonial carousel*/
+
+#footer .widget_hoot-cta-widget a {
+    color: white;
+}

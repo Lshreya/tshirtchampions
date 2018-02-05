@@ -1,0 +1,58 @@
+<?php
+/* Display Title */
+if ( $title )
+	echo $before_title . $title . $after_title;
+?>
+
+<div class="contact-info-widget">
+
+	<?php if ( !empty( $address ) ) : ?>
+		<div class="contact-info-block">
+			<div class="contact-info-icon"><i class="fa fa-home"></i></div>
+			<div class="contact-info-text"><?php echo nl2br( $address ); ?></div>
+		</div>
+	<?php endif; ?>
+
+	<?php if ( !empty( $phone ) ) : ?>
+		<div class="contact-info-block">
+			<div class="contact-info-icon"><i class="fa fa-phone"></i></div>
+			<div class="contact-info-text"><a href="tel:<?php echo esc_attr( $phone ); ?>" <?php hybridextend_attr( 'contact-info-link', 'phone' ); ?>><?php echo $phone; ?></a></div>
+		</div>
+	<?php endif; ?>
+
+	<?php if ( !empty( $email ) ) :
+		$email = sanitize_email( $email ); ?>
+		<div class="contact-info-block">
+			<div class="contact-info-icon"><i class="fa fa-envelope"></i></div>
+			<div class="contact-info-text"><a href="mailto:<?php echo antispambot( $email, 1 ); ?>" <?php hybridextend_attr( 'contact-info-link', 'email' ); ?>><?php echo $email; ?></a></div>
+		</div>
+	<?php endif; ?>
+
+	<?php
+	if ( !empty( $profiles ) ) :
+		foreach( $profiles as $key => $profile ) : ?>
+			<div class="contact-info-block">
+				<?php if ( $profile['icon'] == 'fa-skype' ) :
+					echo '<div class="contact-info-skype fa-skype-block">'
+						. '<i class="fa fa-skype"></i>'
+						. hoot_get_skype_button_code ( $profile['url'] )
+						. '</div>';
+				else: ?>
+					<div class="contact-info-icon"><i class="fa <?php echo sanitize_html_class( $profile['icon'] ); ?>"></i></div>
+					<div class="contact-info-text"><?php
+						if ( !empty( $profile['url'] ) )
+							echo '<a href="' . esc_url( $profile['url'] ) . '" ' . hybridextend_get_attr( 'contact-info-link', 'profile' ) . '>';
+						if ( !empty( $profile['text'] ) )
+							echo $profile['text'];
+						if ( !empty( $profile['url'] ) )
+							echo '</a>';
+						?>
+					</div>
+				<?php endif; ?>
+			</div>
+			<?php
+		endforeach;
+	endif;
+	?>
+
+</div>

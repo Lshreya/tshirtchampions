@@ -1,0 +1,20 @@
+2016-07-12 11:02:49 -0500
+made backup 
+
+
+2016-07-21 12:29:49 -0500
+Adjustments to Product Listing Title Sizes 
+- brandon's names are too big!
+Hid .item-price-wrap to remove "requires design" message
+- done conditionally in jquery since this is the same box a price displays in
+
+
+
+2016-07-27 15:00:34 -0500
+
+file: styles.css
+- adjustments to give back shop/start designing category layouts, responses. 
+
+file: header.php
+- added template name to class of body. 
+

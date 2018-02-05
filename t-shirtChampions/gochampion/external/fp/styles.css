@@ -1,0 +1,462 @@
+/*
+**************************************************
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	 
+	Freedom Prep - Inksoft Store CSS Alterations
+	for use with the 'Green Beans Solo' theme
+	created 9/14/16
+	by Paul Gardino
+	©2016 Champion Apparel, Awards, Promotions
+	All rights reserved
+	
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+**************************************************
+*/
+
+/* alter zoom level because inksoft stretches the 500px size */
+.zoomImg {
+	width: 700px !important;
+	height: 700px !important;
+}
+
+/* remove weird padding */
+body { padding-top: 0px; }
+
+/* kill tiny logo */
+#storelogoimage {
+	display: none;
+}
+
+/* change ul padding because eyes */
+
+ul {
+	padding: 0 0 0 40px;
+}
+
+
+
+/* 
+***************************************************
+*   START 'powered by' block and footer changes   *
+***************************************************
+*/
+
+/* START RIGHT SIDE VERSION */
+#poweredBy {
+	height: 80px;
+	margin-top:-110px;
+	margin-bottom: 20px;
+	margin-right: 10px;
+	text-align: right;
+}
+
+#poweredLink {
+	display: inline-block;
+	width: 360px;
+	height: 80px;
+	background: url('https://tshirtchampions.com/gochampion/external/pl/img/Champion-footer-logo.png');
+}
+
+
+/* START LEFT SIDE VERSION *
+#poweredBy {
+	height: 90px;
+	margin-top:-120px;
+	margin-bottom: 20px;
+	text-align: Left;
+}
+
+#poweredLink {
+	display: inline-block;
+	width: 250px;
+	height: 90px;
+	background: url('https://tshirtchampions.com/gochampion/external/pl/img/Champion-footer-logo-left.png');
+}
+
+*/
+
+
+
+/* content style changes */
+
+
+
+#gp1 h1.font-roboto {
+	display: none;
+}
+
+
+#productDescription {
+	height: auto !important;
+	overflow: visible
+}
+
+
+
+h1#pt1 {
+	display: none; 
+/*	font-size: 1.2em;
+	font-weight: bold;
+	margin-bottom: 5px;
+*/
+}
+
+a.readmore-js-toggle {
+	display: none;
+}
+
+.size-chart-link { 
+	display: none !important; 
+}
+
+#custom-chart { display: block !important; }
+
+
+.form-group {
+	margin-bottom: 0 !important;
+	margin-top: 0 !important;
+}
+
+
+
+/* MOBILE FIRST, DAMMIT! */
+
+
+
+div.campaign-title-wrapper {
+	min-height: 135px;
+	position: relative;
+}
+
+
+.headerLinkWrap {
+    width: 80%;
+    float: right;
+    margin-top: -25px;
+}
+.headerLink {
+}
+
+/* header style changes */
+header.header {
+	border-bottom: 5px solid #b2b2b2;
+}
+
+header.header div.campaign-title-container {
+	margin-bottom:-95px;
+	min-height: 135px;
+}
+
+/* add own logo to home image link */
+
+header.header div.campaign-title-container a {
+	display: block;
+	background: url('https://tshirtchampions.com/gochampion/external/fp/img/Freedom-Preparatory_Circle-logo.png');
+	width: 100px;
+	height: 100px;
+	background-size: contain;
+	background-position: left center;
+	margin: 0;
+}
+
+#order-elements-wrap {
+	width: 	98%;
+	padding-left: 2%;
+}
+	
+
+#productImageWrapper {
+	width: 	98%;
+	padding-left: 2%;
+	margin: 0 auto;
+	text-align: center;
+}
+
+#herospace .herospace-content {
+	display: none;
+}
+
+#shirt {
+    width: 100%;
+    margin-top: 10px;
+}
+
+
+#gp1 {
+	width: 100%;
+	float: right;
+    margin: 0 0 -20px 0;
+    padding-left: 0;
+    background: none;
+}
+
+
+div.product-thumbs {
+	margin-top: -40px ;
+	margin-right:0 ; 
+	margin-bottom: -20px ;
+	margin-left: -10px !important;
+	width: 100%;
+}
+
+
+#goals-wrapper {
+    margin: 0;
+    margin-top: 0;
+    padding-left: 0;
+    margin-bottom: -50px;
+	max-width: none;
+}
+
+#campaign-details {
+	margin-top: -15px; 
+	border-top: none;
+	border-bottom: none;
+}
+
+#footer {
+	padding-top: 30px;
+}
+
+div.product-thumbs ul {
+	padding: 0 0 0 35px;
+	margin-top: 0; 
+}
+
+
+/* custom price display - since price is hidden behind "select size" */
+ #priceDisplay {
+	 font-size: 2em !important;
+	 font-weight: bold;
+	 display: block !important;
+ }
+
+
+@media only screen and (max-width: 480px) {
+	header.header div.campaign-title-container a {
+		width: 140px;
+		height: 140px;
+		margin: 0 auto 90px auto;
+	}
+	.headerLinkWrap {
+		width: 100%;
+		margin: 0;
+	}
+	
+	.headerLink {
+    	margin: 0 8px;
+	}
+	
+	
+	
+	#ink-icon-calendar, #ink-icon-piggy-bank {
+		margin: 0 !important;
+	}
+	
+	#order-elements-wrap {
+		padding-left: none;
+	}
+	
+	
+	#poweredBy {
+		height: 60px;
+		margin-top: -88px;
+		margin-
+	}
+	
+	#poweredLink {
+		width: 270px;
+		height: 60px;
+		background: url('https://tshirtchampions.com/gochampion/external/fp/img/Champion-footer-logo-sm.png');
+	}
+	
+}
+
+
+
+
+
+
+@media only screen and (min-width: 770px) {
+	
+	
+	/* add own logo to home image link */
+	header.header div.campaign-title-container a {
+		display: block;
+		background: url('https://tshirtchampions.com/gochampion/external/fp/img/Freedom-Preparatory_Circle-logo.png');
+		width: 135px;
+		height: 135px;
+		background-size: contain;
+		background-position: center center;
+		margin: 0 auto;
+	}
+	
+	/* header style changes */
+	header.header {
+		border-bottom: 5px solid #b2b2b2;
+	}
+	
+	header.header div.campaign-title-container {
+		margin-bottom:-150px;
+		margin-top: -10px
+	}
+
+	.headerLinkWrap {
+		float: none;
+		position: absolute;
+		top: 0;
+		right: 0;
+		width: 200px;
+		margin-top: 10px;
+	}
+	
+	.headerLinkWrap .headerLink {
+		margin-bottom: 12px;
+		float: right;
+		margin-right: 25px;
+		margin-left: 0;
+		
+	}
+	
+	
+	.campaign-title-container {
+	    float: left;
+	    max-width: 100px;
+	    text-align: left;
+	}
+	
+	#campaign-details {
+		margin-top: -15px; 
+		border-top: none;
+		border-bottom: 2px solid #d0d0d0;
+	}
+
+	#campaign-details h2 { 
+		width: 760px;
+	}
+	
+	#order-elements-wrap {
+		width: 	45%;
+		padding-left: 20px;
+	}
+	
+	#shirt {
+		margin-top: 100px;
+		width: 50%;
+	}
+	
+	
+	#gp1 {
+		width: 100% !important;
+		float: none;
+		margin-left: 0;
+		margin-top: 0;
+	}
+	
+	#goal-header-wrap {
+	    padding: 0;
+/*		max-width: 960px;
+		width: 100% !important;
+*/		width: 475px !important;
+	    margin: -80px auto 0 auto;
+		background: none !important;
+	}
+	#goal-header-container {
+		float: left;
+/*		margin-left: 180px;
+*/		margin-left: 0;}
+	
+	#goals-wrapper {
+		float: none;
+		margin-top: 0;
+		margin-bottom: 0;
+	}
+	
+	
+	#herospace {
+		margin-top: 10px;
+		padding-bottom: 0;
+	}
+	
+	
+	div.product-thumbs {
+		width: 98%;
+		padding-left: 2%;
+	}
+	
+	
+	
+	
+	
+	#footer {
+		margin-top: 60px;
+	}
+	
+	#poweredBy {
+	    max-width: 960px;
+	    width: 100%;
+	    margin: -110px auto 20px auto;
+	}
+	
+	
+}
+
+
+
+
+
+@media only screen and (min-width: 946px) {
+	
+	header.header {
+		padding-top: 50px;
+	}
+	
+	header.header div.campaign-title-container a {
+		margin-top: -50px;
+		width: 200px;
+		height: 200px;
+	}
+	
+	
+	#mp1 {
+		margin-top: 50px;
+	}
+	#shirt {
+		margin-top: 175px;
+	}
+	
+	div.single-product-widget {
+		width: 100%;
+	}
+	
+	#productImageWrapper {
+		width: 88%;
+	}
+	
+	div.product-thumbs {
+		width: 60px;
+		padding-left: 0 !important;
+		margin-left: -40px;
+	}
+	
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,346 @@
+/*
+**************************************************
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	 
+	Goldcrest 51 - Inksoft Store CSS Alterations
+	for use with the 'Green Beans' theme
+	created 6/27/16
+	by Paul Gardino
+	©2016 Champion Apparel, Awards, Promotions
+	All rights reserved
+	
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+**************************************************
+*/
+
+/* alter zoom level because inksoft stretches the 500px size */
+.zoomImg {
+	width: 700px !important;
+	height: 700px !important;
+}
+
+
+body { 
+/* remove weird padding */
+	padding-top: 0px; 
+	background: #757575;
+}
+
+/* gc container floats. */
+.container {
+	background: #fff;
+	padding-left: 10px;
+}
+
+
+/* 	
+	if this repeats the logo/header content, make hidden so it's still showing in e-readers etc.
+	use #campaign-details h2 if "site content" spot has real content. 
+*/
+#campaign-details {
+	visibility: hidden;
+	height: 0;
+	margin: 0;
+	padding: 0;
+}
+
+/* if all of #campaign-details is hidden, then this will add a margin to the products container to keep it off of the header.*/
+#mp1 {
+	margin-top: 30px;
+}
+
+
+/* Fix for ShareThis button. Can be too low, depending on header. */
+#ShareThis {
+	margin-top: -3px;
+    display: block;
+    background: #C91F00;
+    border-radius: 20px;
+    padding: 0 15px 0 0;
+}
+
+/* START header changes */
+
+#header {
+	height:150px;
+	background: none !important;
+	border-bottom: none;
+	position: relative !important;
+	/*
+	border-bottom: 1px solid #FFA60F; 
+	background: #2A3E50;
+	/*
+	box-shadow:0px 25px #2B4B59;
+	background-image: url('') !important;
+	background-position: bottom center;
+	background-size: cover !important;
+	*/
+}
+#campaign-title-container {
+	height:150px;
+	background: #333333;
+}
+
+#storelogoimage { 
+	display: none;
+}
+
+.headerNav-link {
+	color: white !important;
+}
+
+.headerLinkWrap {
+	margin-top: 58px;
+	margin-right: 20px;
+}
+.headerLinkWrap a {
+	color: white !important;
+}
+
+#ManageAccountLink span, a { 
+	color: #fff !important;
+}
+
+ul.amw_dropdownList {
+	background: #C21F05	 !important;
+}
+
+#PageTitle {
+/*	background-image: url('https://tshirtchampions.com/gochampion/external/gc/img/gc-logo.png') !important; */
+	height: 125px;
+	min-width: 200px;
+	width: 200px; 
+	display:block !important;
+	top: -8px;
+	left: 0;
+	position: relative;
+	background-size: contain;
+	background-repeat: no-repeat;
+	margin: 20px 0 0 0;
+}
+
+#PageTitle a {
+	font-size: 0 !important;
+	display: block;
+	min-width: 200px; 
+	height: 125px;
+}
+
+/* START Product listing changes */
+
+.ms-mp-product-details {
+	display: block !important;
+	position: static;
+	height: auto;
+	background: none;
+	box-shadow: none;
+	border:none;
+}
+.ms-mp-product-details-header {
+	display: none;
+}
+.ms-mp-details-content {
+	height: auto;
+	padding: 5px 0 0 0;
+	min-height: 145px;
+	position: absolute;
+	bottom: 0;
+}
+
+.ms-mp-title a.font-montserrat {
+	display: none;
+}
+
+.ms-mp-product-details:after {
+	background-color:none;
+	display: none;
+}
+
+.ms-mp-title {
+	border-top: none !important;
+	min-height: 51px;
+}
+
+.ms-mp-title span {
+	font-weight: bold;
+	font-size: 1.3em;
+	border-bottom:	1px solid #d2d2d3 !important;
+	width:100%;
+}
+
+.ms-mp-options:first-child {
+	height: auto;
+}
+
+.ms-mp-product {
+	min-height: 715px;
+	padding: 0;
+	margin: 0 0 10px 6%
+}
+
+.ms-mp-button {
+	margin: 0;
+	bottom: 150px;
+	font-size: 1em;
+}
+
+.ms-mp-image {
+	min-height: 290px;
+	max-height: 290px;
+}
+
+
+.ms-mp-option-color {display: block !important;}
+
+.ms-mp-product-details-footer {display: none;}
+
+.ms-mp-swatch-container {
+	display: block !important;
+}
+
+
+/* 
+***************************************************
+*   START 'powered by' block and footer changes   *
+***************************************************
+*/
+
+/* START RIGHT SIDE VERSION 
+#poweredBy {
+	height: 80px;
+	margin-top:-110px;
+	margin-bottom: 20px;
+	text-align: right;
+}
+
+#poweredLink {
+	display: inline-block;
+	width: 360px;
+	height: 80px;
+	background: url('https://tshirtchampions.com/gochampion/external/gc/img/Champion-footer-logo.png');
+}
+
+
+/* START LEFT SIDE VERSION */
+#poweredBy {
+	height: 90px;
+	margin-top:-120px;
+	margin-bottom: 20px;
+	text-align: Left;
+}
+
+#poweredLink {
+	display: inline-block;
+	width: 250px;
+	height: 90px;
+	background: url('https://tshirtchampions.com/gochampion/external/gc/img/Champion-footer-logo-left.png');
+}
+
+
+footer .container {
+	background: none !important;
+}
+
+/* keep it to one extra query if possible. This one is necessary because of the inksoft theme's own reponses */
+
+@media screen and (max-width: 700px) {
+	
+	/* gc container needs right padding at this size. */
+	.container {
+		padding-right: 10px;
+	}
+	
+	/* powered by block changes to be centered and use left image version for mobile */
+	#poweredBy {
+		height: 90px;
+		margin-top:-120px;
+		margin-bottom: 20px;
+		text-align: center;
+	}
+	
+	#poweredLink {
+		display: inline-block;
+		width: 250px;
+		height: 90px;
+		background: url('https://tshirtchampions.com/gochampion/external/gc/img/Champion-footer-logo-left.png');
+	}
+	
+	/* product listing adjustments to spacing and such */
+	
+	.ms-mp-thumb {
+		margin-top: 10px;
+	}
+
+}
+
+@media screen and (max-width: 600px) {
+
+/* margins change for footer at 600px. This corrects for the powered by centered block */
+
+	#poweredBy {
+		margin-top: -110px;
+	}
+
+}
+
+
+@media screen and (max-width: 479px) {
+
+/* products shift to 1 per row, this removes margins that can cause misaligned products 
+	
+	also header adjustments in this implimentation.
+*/
+
+	
+	body { 
+	/* remove body background to go borderless on the page */
+		padding-top: 0px; 
+		background: #fff;
+	}
+	
+	/* gc container floats. */
+	.container {
+		background: #fff;
+		padding-left: 0;
+	}
+	
+	/* header adjustments not needed for Porter leath */
+	#header {
+		height:120px !important;
+		background: #333333 !important;
+	}
+	#PageTitle {
+		height: 90px !important;
+		width: 107px !important; 
+		min-width: 107px !important;
+		margin-left: -7px !important;
+		background-size: cover !important;
+		margin-top: 12px; */
+	}
+	#PageTitle a {
+		height: 90px !important;
+		width: 140px !important; 
+		min-width: 140px;
+	}
+	
+	.headerLinkWrap {
+		margin-top: 39px;
+		margin-right: 0px;
+	}
+	
+	#campaign-title-container {
+	height:100px;
+	}
+	
+	
+
+	.ms-mp-product {
+		margin:0;
+	}
+
+}
+
+
+
+
+

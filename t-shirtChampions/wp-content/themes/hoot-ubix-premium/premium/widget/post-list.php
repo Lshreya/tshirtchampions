@@ -1,0 +1,56 @@
+<?php
+/* Display Title */
+if ( $title )
+	echo $before_title . $title . $after_title;
+
+/* Create Query */
+$count = intval( $count );
+$query_args = array();
+$query_args['posts_per_page'] = ( empty( $count ) ) ? 3 : $count;
+if ( $category )
+	$query_args['category'] = $category;
+$postlist = get_posts( $query_args );
+global $post;
+
+/* Display List */
+if ( !empty( $postlist ) ) : ?>
+
+	<div class="post-list-widget">
+
+		<?php foreach ( $postlist as $post ) : setup_postdata( $post ); ?>
+
+			<?php $thumbnail = ( !$hide_thumbnails && has_post_thumbnail() ) ? true : false; ?>
+			<div class="post-list-post<?php if ( !$thumbnail ) echo ' no-thumb'; ?>">
+
+				<?php if ( $thumbnail ) : ?>
+					<div class="post-list-thumb">
+						<a href="<?php the_permalink(); ?>"><?php the_post_thumbnail( 'thumbnail' ); ?></a>
+					</div>
+				<?php endif; ?>
+
+				<div class="post-list-content">
+					<h4><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h4>
+					<?php if ( !$hide_date || !$hide_comments ) : ?>
+						<div class="post-list-meta">
+							<?php
+							if ( !$hide_date ) { echo get_the_date(); }
+							if ( !$hide_date && !$hide_comments ) _e( ' / ', 'hoot-ubix-premium' );
+							if ( !$hide_comments ) {
+								comments_popup_link(	__( '0 Comments', 'hoot-ubix-premium' ),
+														__( '1 Comment', 'hoot-ubix-premium' ),
+														__( '% Comments', 'hoot-ubix-premium' ), 'comments-link', '' );
+								}
+							?>
+						</div>
+					<?php endif; ?>
+				</div>
+
+				<div class="clearfix"></div>
+			</div><!-- .post-list-post -->
+
+		<?php endforeach; ?>
+		<?php wp_reset_postdata(); ?>
+
+	</div>
+
+<?php endif; ?>

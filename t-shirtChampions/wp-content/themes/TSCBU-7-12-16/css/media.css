@@ -1,0 +1,668 @@
+/* ----------- iPhone 4 and 4S ----------- */
+
+/* Portrait and Landscape */
+ @media screen and (max-width:480px) {
+.grid_1,
+.grid_2,
+.grid_3,
+.grid_4,
+.grid_5,
+.grid_6 { width: 100%; }
+
+ .ship_info, .tab, #nav, #next, #prev, .hover {
+     display: none;}
+  .bebas {
+    font-size: 18px;}
+  .robotb {
+    font-size: 18px;}
+
+ #homeh1_wrap {
+    text-align: center;
+    height: 0px;
+    position: relative;
+    background: url(images/tribar.png) repeat-x center top;}
+ #homeh1 {
+   width: 316px;}
+   h1.home, #body.home #homeh1 h1 {
+     font-size: 20px;
+    line-height: 36px;
+    margin-bottom: 0;}
+  #logo {
+    position:absolute;
+    left: 31%;
+    top: 35px;}
+  #footer .socials a {
+    margin-right: 7px;
+  top: 155px;}
+  #footer .socials {
+    top:155px;}
+  #footer .account {
+    top: 115px;
+    right: 62px;
+    font-size: 16px;}
+  #footer .redundant_nav {
+    top: 220px;}
+#logo_farm .logo.first {
+  margin-right: 0px;}
+#testimonials {}
+#about {}
+  .container .columns, .container .column {
+    margin: 0 0 16px 0;}
+    h2.home, #body.home h2 {
+    font-size: 22px;
+    line-height: 34px;
+    margin-bottom: 12px;}
+
+  #triptych a, #triptych img {
+    position: relative;
+    z-index: 10;
+    border-radius: 10px;
+    height: auto;}
+}
+@media screen and (min-width:1017px) and (max-width:1440px){
+    #shipping {
+      margin-bottom: 101px;
+      position: relative;
+      z-index: 101;
+      background: #f7a11a;
+      height: 57px;
+  }
+}
+@media screen and (max-width:1017px){
+    #shipping {
+      margin-bottom: 30px;
+      position: relative;
+      z-index: 101;
+      background: #f7a11a;
+      height: 57px;
+  }
+}
+@media screen and (min-width:768px) and (max-width:688px){
+    #logo {
+        position: absolute;
+        top: 50px;
+        left: 50%;
+        margin-left: -87px;
+        z-index: 10;
+        height: auto;
+        max-width: 22%;}
+          #nav {
+        position: absolute;
+        bottom: 20px;
+        left: -50px;
+        list-style-type: none;
+        padding: 0;
+        margin: 0 0 0 20px;
+        height: 65px;}
+    #nav a {
+        font-size: 24px;}
+    #nav li#nav_design_library {
+        margin-right: 145px;}
+    #home_photoset #prev {
+    left: 10px;}
+#home_photoset #next {
+    right: 0px;}
+#shipping .ship_info .free {
+    position: absolute;
+    top: 30px;
+    left: 170px;
+    width: 70px;
+    height: 80px;
+    text-align: center;}
+#shipping .ship_info .rush {
+    position: absolute;
+    top: 30px;
+    right: 58px;
+    width: 70px;
+    height: 80px;
+    text-align: center;}
+#shipping .ship_info .link {
+    position: absolute;
+    bottom: 45px;
+    left: 0;
+    width: 100%;
+    text-align: center;}
+}
+
+
+
+/* ----------- iPhone 5 and 5S ----------- */
+
+/* Portrait and Landscape */
+@media screen and (min-width:481px) and (max-width:568px){
+.grid_1,
+.grid_2,
+.grid_3,
+.grid_4,
+.grid_5,
+.grid_6 { width: 100%; }
+
+.ship_info, .tab, #nav, #next, #prev, .hover {
+    display: none;}
+ .bebas {
+   font-size: 18px;}
+ .robotb {
+   font-size: 18px;}
+
+#homeh1 {
+  width: 316px;}
+  h1.home, #body.home #homeh1 h1 {
+    font-size: 25px;}
+ #logo {
+   position:absolute;
+   left: 31%;
+   top: 35px;}
+ #footer .socials a {
+   margin-right: 7px;
+   top: 155px;
+ }
+ #footer .socials {
+   top:155px;
+   left: 50px;
+ }
+ #footer .account {
+   top: 115px;
+   right: 130px;
+   font-size: 16px;
+ }
+ #footer .redundant_nav {
+   top: 220px;
+ }
+#logo_farm .logo.first {
+ margin-right: 10px;}
+#testimonials {}
+#about {}
+ .container .columns, .container .column {
+   margin: 0 0 16px 0;
+   }
+   h2.home, #body.home h2 {
+   font-size: 22px;
+   line-height: 34px;
+   margin-bottom: 12px;}
+}
+/* ----------- iPhone 6 ----------- */
+
+/* Portrait and Landscape */
+@media screen and (min-width:569px) and (max-width:667px)
+{
+.grid_1,
+.grid_2,
+.grid_3,
+.grid_4,
+.grid_5,
+.grid_6 { width: 100%; }
+
+.ship_info, .tab, #nav, #next, #prev, .hover {
+    display: none;}
+
+
+#homeh1 {
+  width: 316px;}
+  h1.home, #body.home #homeh1 h1 {
+    font-size: 25px;}
+ #footer .socials a {
+   margin-right: 7px;
+   top: 155px;
+ }
+ #footer .socials {
+   top: 155px;
+   left: 60px;
+ }
+ #footer .account {
+   top: 115px;
+   right: 130px;
+   font-size: 16px;
+ }
+ #footer .redundant_nav {
+   top: 220px;
+ }
+#logo_farm .logo.first {
+ margin-right: 10px;}
+#testimonials {}
+#about {}
+ .container .columns, .container .column {
+   margin: 0 0 16px 0;
+   }
+   h2.home, #body.home h2 {
+   font-size: 22px;
+   line-height: 34px;
+   margin-bottom: 12px;}
+}
+
+@media screen and (min-width:668px) and (max-width:767px)
+{
+.grid_1,
+.grid_2,
+.grid_3,
+.grid_4,
+.grid_5,
+.grid_6 { width: 100%; }
+
+.ship_info, .tab, #nav, #next, #prev, .hover {
+    display: none;}
+
+#homeh1 {
+  width: 316px;}
+  h1.home, #body.home #homeh1 h1 {
+    font-size: 25px;}
+ #logo {
+    position: absolute;
+    left: 50%;
+    top: 35px;
+    margin-left: -105px;
+ }
+ #footer .socials a {
+   margin-right: 7px;
+   top: 155px;
+ }
+ #footer .socials {
+   top: 155px;
+   left: 60px;
+ }
+ #footer .account {
+   top: 110px;
+   right: 130px;
+   font-size: 16px;
+ }
+ #footer .redundant_nav {
+   top: 220px;
+ }
+#logo_farm .logo.first {
+ margin-right: 10px;}
+#testimonials {}
+#about {}
+ .container .columns, .container .column {
+   margin: 0 0 16px 0;
+   }
+   h2.home, #body.home h2 {
+   font-size: 22px;
+   line-height: 34px;
+   margin-bottom: 12px;}
+   #nav a {
+ text-align: center;
+ font-size: 10px;
+ text-transform: uppercase;
+ text-shadow: 1px 1px 0 rgba(241,92,34,.75);
+ color: #fff;
+ text-decoration: none;
+ line-height: 23px;
+ height: 65px;
+ display: block;
+ padding: 0px 5px;
+ -webkit-transition: color .4s;
+ -moz-transition: color .4s;
+ -ms-transition: color .4s;
+ -o-transition: color .4s;
+ transition: color .4s;
+   }
+   #nav li#nav_start_designing a {
+    width: auto;
+   }
+   #nav li#nav_design_library a,
+   #nav li#nav_our_company a {
+    width: auto;
+   }
+
+   #nav li#nav_t-shirt_shop a {
+    width: auto;
+   }
+
+   #nav li#nav_help_center a,
+   #nav li#nav_faqs a{
+    width: auto;
+   }
+
+}
+
+
+@media screen and (min-width:737px) and (max-width:767px)
+{
+.grid_1,
+.grid_2,
+.grid_3,
+.grid_4,
+.grid_5,
+.grid_6 { width: 100%; }
+
+.ship_info, .tab, #nav, #next, #prev, .hover {
+    display: none;}
+ .bebas {
+   font-size: 18px;}
+ .robotb {
+   font-size: 18px;}
+
+#homeh1 {
+  width: 316px;}
+  h1.home, #body.home #homeh1 h1 {
+    font-size: 25px;}
+
+ #footer .socials a {
+   margin-right: 7px;
+   top: 155px;
+ }
+ #footer .socials {
+   top: 150px;
+   left: 55px;
+ }
+ #footer .account {
+   top: 118px;
+   right: 133px;
+   font-size: 16px;
+ }
+ #footer .redundant_nav {
+   top: 220px;
+   right: 8px;
+ }
+#logo_farm .logo.first {
+ margin-right: 10px;}
+#testimonials {}
+#about {}
+ .container .columns, .container .column {
+     margin: 0 0 16px 0;}
+   h2.home, #body.home h2 {
+   font-size: 22px;
+   line-height: 34px;
+   margin-bottom: 12px;}
+}
+
+@media screen and (min-width:768px) and (max-width:1024px)
+{
+.grid_1,
+.grid_2,
+.grid_3,
+.grid_4,
+.grid_5,
+.grid_6 { width: 100%; }
+
+.ship_info, #next, #prev, .hover {
+    display: none;}
+
+
+#homeh1 {
+  width: 550px;}
+  h1.home, #body.home #homeh1 h1 {
+    font-size: 45px;}
+  #triptych a, #triptych img {
+    position: relative;
+    z-index: 10;
+    border-radius: 20px;
+    height: auto;
+  }
+ #logo {
+   position:absolute;
+   left: 50%;
+   top: 28px;}
+ #footer .socials a {
+   margin-right: 7px;
+   top: 155px;
+ }
+ #footer .socials {
+   top: 150px;
+   left: 55px;
+ }
+ #footer .account {
+   top: 155px;
+   right: 133px;
+   font-size: 16px;
+ }
+ #footer .redundant_nav {
+   top: 220px;
+   right: 8px;
+ }
+#logo_farm .logo.first {
+ margin-right: 10px;}
+#testimonials {}
+#about {}
+ .container .columns, .container .column {
+   margin: 0 0 16px 0;
+   }
+   h2.home, #body.home h2 {
+   font-size: 22px;
+   line-height: 34px;
+   margin-bottom: 12px;}
+
+}
+
+@media screen and (max-width:767px){
+  #logo{
+    position:static;
+    left:initial;
+    top:initial;
+    width: auto;
+    display: block;
+    text-align: center;
+    margin-left: 0px;
+  }
+  #header{
+    height:auto;
+  }
+  #header_wrap{
+    height:auto;
+    background:#F6A627;
+  }
+  #nav {
+    position:static;
+    bottom:initial;
+    left:initial;
+    padding:0px 0px 20px 0px;
+    margin:initial;
+    height:initial;
+    margin-left:10px;
+  }
+  #nav li{
+    float:none;
+  }
+  #nav a{
+    text-align:left;
+    height:auto;
+  }
+  #nav li#nav_start_designing, #nav li#nav_help_center, #nav li#nav_faqs {
+    border-right:none;
+  }
+  br{
+    display:none;
+  }
+  .robotb{
+    padding-right:10px;
+  }
+
+  .title-bar {
+      display: block !important;
+      background-color: #0E2240;
+      margin-left: -6%;
+      width: 111.5%;
+      padding-left: 6%;
+  }
+}
+
+@media screen and (max-width: 964px){
+    #nav li#nav_start_designing,
+    #nav li#nav_start_designing a {
+        margin-right: 0;
+        width: 120px;
+        font-size: 20px;
+    }
+
+    #nav li#nav_design_library,
+    #nav li#nav_design_library a {
+        margin-right: 240px;
+        width: 120px;
+        font-size: 20px;
+    }
+
+    #nav li#nav_faqs,
+    #nav li#nav_faqs a {
+        margin-right: 0;
+        width: 120px;
+        font-size: 20px;
+    }
+
+    #nav li#nav_t-shirt_shop,
+    #nav li#nav_t-shirt_shop a {
+        margin-right: 0;
+        width: 120px;
+        font-size: 20px;
+    }
+}
+
+@media screen and (min-width:414px) and (max-width:736px)
+{
+    #triptych a,
+    #triptych img {
+      position: relative;
+      z-index: 10;
+      border-radius: 20px;
+      height: auto;}
+
+    #testimonials {}
+      h2.home, #body.home h2 {
+    font-size: 22px;
+    line-height: 34px;
+    margin-bottom: 12px;}
+    h4.home, #body.home h4 {
+    font-size: 13px;
+    line-height: 28px;
+    margin-bottom: 3px;}
+}
+
+@media only screen and (max-width: 767px) and (min-width: 480px){
+    .trip.medium-4 {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 767px){
+  #testimonials .champion {
+    background: url(images/dashed.png) repeat-y right top;
+  }
+  #nav {
+      display: none;
+  }
+  #header .contact {
+    position: static;
+    top: initial;
+    left: initial;
+  }
+  #utility {
+      position: static; 
+      top: initial; 
+      right: initial; 
+      float: right;
+  }
+  #nav .bebas{
+    font-family: 'roboto_slabbold', 'roboto_slabregular', Georgia, serif;
+  }
+  #nav li a{
+    white-space: nowrap;
+  }
+  #nav li{
+    margin:10px 0px;
+  }
+}
+
+@media only screen and (max-width: 540px){
+  img.contact{
+    display: block;
+    margin: 0px auto;
+  }
+  #utility {
+      float: none;
+      width: 195px;
+      margin: 10px auto;
+  }
+  #utility a.cart {
+    padding: 0px;
+    background: none;
+  }
+}
+@media only screen and (min-width: 767px) and (max-width: 1024px){
+  #nav {
+      display: block !important;
+  }
+  .title-bar {
+      display:none !important;
+  }
+}
+@media only screen and (max-width: 1035px){
+  .inksoft #footer-callout{
+    display:none;
+  }
+}
+
+@media screen and (min-width:435px) and (max-width:773px)
+{
+h1.home, #body.home #homeh1 h1 {
+    font-size: 45px;
+    line-height: 36px;
+    margin-bottom: 0;
+}
+    #triptych {
+      text-align: center;
+      padding: 30px 0;
+      position: relative;
+  }
+  #testimonials {}
+}
+
+@media screen and (max-width:570px){
+  #home_photoset #prev {
+      left: 0px;
+      text-align:left;
+  }
+  #home_photoset #next {
+      right: 0px;
+      text-align:right;
+  }
+  #home_photoset #prev img,
+  #home_photoset #next img {
+    width: 75%;
+  }
+}
+
+@media only screen and (max-width: 767px){
+    a#mobile_logo {
+        display:block;
+    }
+    a#logo{
+      display:none;
+    }
+    #nav {
+        background-color: #0E2240;
+        width: 111.5%;
+        margin-left: -6%;
+        padding: 2% 6%;
+    }
+    #nav span.robotb,
+    #nav span.bebas {
+        font-family: 'OpenSansRegular', Arial, sans-serif;
+        text-shadow:none;
+    }
+    #nav a:hover,
+    #nav a.active{
+      color:#f7a11a;
+    }
+}
+@media only screen and (max-width: 480px){
+    #header_wrap {
+        overflow:hidden;
+    }
+    a#mobile_logo {
+        width: 100%;
+        margin-left: 0;
+    }
+    #header.container .col24.columns {
+        width: 100%;
+    }
+    #header.container {
+        width: 100%;
+    }
+    .title-bar{
+      margin-left: 0;
+      width: 100%;
+    }
+    #nav {
+        width: 100%;
+        margin-left: 0;
+        padding: 2% 6%;
+    }
+}

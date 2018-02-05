@@ -1,0 +1,37 @@
+/*
+ Theme Name:   Storefront Child
+ Theme URI:    http://tshirtchampions.com/fxprivate/wp-content/themes/storefront-child/
+ Description:  Storefront Child Theme
+ Author:       Paul Gardino
+ Author URI:   http://example.com
+ Template:     storefront
+ Version:      1.0.0
+ License:      GNU General Public License v2 or later
+ License URI:  http://www.gnu.org/licenses/gpl-2.0.html
+ Tags:         light, dark, two-columns, right-sidebar, responsive-layout, accessibility-ready
+ Text Domain:  twenty-fifteen-child
+*/
+
+
+
+
+div.woocommerce-billing-fields, p.price {display: none}
+div.pp_pic_holder .ppt {display:none !important;}
+
+body.archive form.cart { width: 80%; margin: 0 10%; clear: both; }
+body.archive div.quantity { float: left; clear: none; width: 20%; }
+body.archive form.cart button { float: right; clear: none; width: 60%; padding: 7px 0 }
+
+body.archive p.stock { font-size: 25px; padding: 0; margin: 0; clear: both;  }
+body.archive p.categories { font-size: 20px !important; padding: 0; margin: 0; }
+/* body.archive p.categories:before {content: "Category: "; font-size: 15px; } */
+
+div.entry-summary [itemprop="description"] p {font-size: 1.5em;}
+
+ul.wc-tabs, .woocommerce-Tabs-panel--description {display: none !important; }
+.woocommerce-Tabs-panel--additional_information {display: block !important; width: 100% !important }
+
+a.woocommerce-LoopProduct-link h3 { font-size: 1.5em !important }
+a.woocommerce-LoopProduct-link p {margin:-10px 0 0;}
+
+span.sku {font-size: 1.1em; font-style: italic}
